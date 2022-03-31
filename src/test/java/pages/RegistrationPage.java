@@ -24,9 +24,9 @@ public class RegistrationPage {
             pictures = $("#uploadPicture"),
             currentAddress = $("#currentAddress"),
             dropdownState = $("#state"),
-            chooseState = $(byText("Haryana")),
+            chooseState = $(byText("NCR")),
             dropdownCity = $("#city"),
-            chooseCity = $(byText("Panipat")),
+            chooseCity = $(byText("Delhi")),
             submitButton = $("#submit"),
             checkFormField = $(".table-responsive");
 
@@ -114,8 +114,7 @@ public class RegistrationPage {
             String firstName, String lastName, String email,
             String gender, String mobile, String day, String month,
             String year, String subjects, String hobbies1,
-            String hobbies2, String picture,
-            String address, String state, String city) {
+            String hobbies2, String address, String state, String city) {
         checkFormField.shouldHave(
                 text(firstName + " " + lastName),
                 text(email),
@@ -125,7 +124,6 @@ public class RegistrationPage {
                 text(subjects),
                 text(hobbies1),
                 text(hobbies2),
-                text(picture),
                 text(address),
                 text(state + " " + city));
     }
